@@ -1,0 +1,23 @@
+avg@avg-VirtualBox:~/workspace/Test-verst$ ls -ali
+итого 68
+413816 drwxrwxr-x 13 avg    avg     4096 сен 10 05:01 .
+393560 drwxrwxrwx  9 avg    avg     4096 сен  3 22:00 ..
+525548 drwxrwxr-x  2 nobody nogroup 4096 сен 10 03:44 cache
+525536 drwxrwxr-x  2 avg    avg     4096 сен 10 03:44 configs
+398075 drwxr-xr-x  2 avg    avg     4096 июл 25 15:53 css
+421927 drwxr-xr-x  2 avg    avg     4096 июл 25 15:53 fonts
+415013 drwxrwxr-x  8 avg    avg     4096 сен 10 05:01 .git
+421510 -rw-rw-r--  1 avg    avg       19 сен  3 21:48 .gitignore
+525554 drwxrwxr-x  2 avg    avg     4096 сен 10 03:45 htdocs
+413794 drwxrwxr-x  3 avg    avg     4096 сен 10 04:06 include
+421995 -rw-rw-r--  1 avg    avg      607 сен 10 04:26 index.php
+545950 drwxr-xr-x  2 avg    avg     4096 сен 10 03:27 js
+421457 drwxrwxr-x  3 avg    avg     4096 сен  3 21:48 nbproject
+421502 -rw-rw-r--  1 avg    avg       12 сен  3 21:46 README.md
+422102 -rw-rw-r--  1 avg    avg        1 сен 10 05:01 smarty.error
+545275 drwxrwxr-x  2 avg    avg     4096 сен 10 03:48 templates
+546119 drwxrwxr-x  2 nobody nogroup 4096 сен 10 03:44 templates_c
+avg@avg-VirtualBox:~/workspace/Test-verst$ 
+avg@avg-VirtualBox:~/workspace/Test-verst$ tail /var/log/apache2/tv.avg-error.log 
+[Sat Sep 10 05:04:51.469566 2016] [:error] [pid 10609] [client 127.0.0.1:42648] PHP Fatal error:  Uncaught Error: Call to a member function _callExternalMethod() on null in /home/avg/workspace/Test-verst/include/libs/sysplugins/smarty_internal_data.php:241\nStack trace:\n#0 /home/avg/workspace/Test-verst/include/setup.php(20): Smarty_Internal_Data->__call('Smarty', Array)\n#1 /home/avg/workspace/Test-verst/index.php(5): Smarty_Setup->Smarty_Setup()\n#2 {main}\n  thrown in /home/avg/workspace/Test-verst/include/libs/sysplugins/smarty_internal_data.php on line 241
+avg@avg-VirtualBox:~/workspace/Test-verst$

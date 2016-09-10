@@ -1,1 +1,1 @@
-# Test-verst
+# Smarty error -> smarty.error
